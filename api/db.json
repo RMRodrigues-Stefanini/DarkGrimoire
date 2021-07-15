@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Darth Vader",
+      "name": "Anakin Skywalker",
+      "type": "ADM"
+    },
+    {
+      "id": 2,
+      "login": "Ben_Kenobi",
+      "name": "Obi-Wan Kenobi",
+      "type": "PLAYER"
+    },
+    {
+      "id": 3,
+      "login": "S0L0",
+      "name": "Han Solo",
+      "type": "ADM"
+    }
+  ],
+  "card": [
+    {
+      "id": 1,
+      "name": "Kozmo Suprider",
+      "atk": "2300",
+      "def": "800",
+      "img": "assets/images/x-wing.png"
+    },
+    {
+      "id": 2,
+      "name": "Kozmo Landwalker",
+      "atk": "2400",
+      "def": "1200",
+      "img": "assets/images/walker.png"
+    },
+    {
+      "id": 3,
+      "name": "Kozmo Tincan",
+      "atk": "0",
+      "def": "0",
+      "img": "assets/images/r2d2.png"
+    },
+    {
+      "id": 4,
+      "name": "Kozmo Lightsword",
+      "atk": "-",
+      "def": "-",
+      "img": "assets/images/maul.png"
+    },
+    {
+      "id": 5,
+      "name": "Kozmojo",
+      "atk": "-",
+      "def": "-",
+      "img": "assets/images/force_choke.png"
+    }
+  ]
+}

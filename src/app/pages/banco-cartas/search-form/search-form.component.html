@@ -1,0 +1,11 @@
+<div style="position: absolute; align-items: center;">
+<label for="userId"> User ID: </label>
+<input id="userId" type="text" [formControl]="userId">
+</div>
+<div style="text-align: center;">
+<button type="submit" class="btn btn-primary" (click)="getUser()"> Search User </button>
+</div>
+
+<div style="text-align: center; margin: 3mm; font-size: large; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+  User ID: {{users.id}} <br> Login: {{users.login}} <br> User Name: {{users.name}} <br> User Profile: {{users.type}}
+</div>

@@ -1,0 +1,23 @@
+
+<form [formGroup]="userForm" style="text-align: left; padding-left: 1cm; color: white;" >
+<div>
+  <label for="id">ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+  <input id="id" type="text" formControlName="id">
+</div>
+<div>
+  <label for="login"> Login:&nbsp;&nbsp;&nbsp; </label>
+  <input id="login" type="text" formControlName="login">
+</div>
+<div>
+  <label for="name">Name: &nbsp;</label>
+  <input id="name" type="text" formControlName="name">
+</div>
+<div>
+  <label for="type"> Profile:&nbsp; </label>
+  <input id="type" type="text" formControlName="type">
+</div>
+</form>
+<div style="padding-left: 1.5cm;">
+<button  style="margin: 1cm;" type="submit" class="btn btn-primary" (click)="submit()"> Submit </button>
+<button type="submit" class="btn btn-primary" (click)="delete()">Delete user by ID</button>
+</div>

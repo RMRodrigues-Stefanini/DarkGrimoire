@@ -1,0 +1,25 @@
+<div style="position: absolute; align-items: center;">
+<label for="cardId"> Card ID: </label>
+<input id="cardId" type="text" [formControl]="cardId">
+</div>
+<div style="text-align: center;">
+<button type="submit" class="btn btn-primary" (click)="getCard()"> Search Card</button>
+</div>
+
+<table border="1" style="margin-left: auto; margin-right: auto; margin-top: 20px; border-color: #3c074d00; ">
+  <tr>
+    <td>
+        <div style="text-align: left; margin: 3mm; font-size: large; font-weight: bold; font-family: 'Courier New', Courier, monospace; ">
+          Card ID:&nbsp;&nbsp;&nbsp; {{cards.id}} <br>
+          Card Name:&nbsp; {{cards.name}}<br>
+          ATK:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{cards.atk}}<br>
+          DEF:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{cards.def}}<br>
+          </div>
+        </td>
+    <td>
+          <div>
+          <img style="max-width: 300px; max-height: 300px;" src={{cards.img}}>
+         </div>
+    </td>
+ </tr>
+</table>

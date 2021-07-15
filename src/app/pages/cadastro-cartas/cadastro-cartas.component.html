@@ -1,0 +1,36 @@
+
+<div style="background: linear-gradient(to top, #3c074dad 0%, black 100%); color:  white;">
+<li><a routerLink="/banco-cartas" routerLinkActive="active"> Cards Vault</a></li>
+<li><a routerLink="/home" routerLinkActive="active">  Home </a></li>
+
+<h3 style="text-align: center;"> Add new card or modify card by ID</h3>
+<form [formGroup]="cardForm" style="text-align: left; padding-left: 1cm;">
+<div>
+  <label for="id">ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="id" type="text" formControlName="id">
+</div>
+<div>
+  <label for="name">Name:&nbsp;&nbsp; </label>
+  <input id="name" type="text" formControlName="name">
+</div>
+<div>
+  <label for="atk"> Atk: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="atk" type="text" formControlName="atk">
+</div>
+<div>
+  <label for="def"> Def: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="def" type="text" formControlName="def">
+</div>
+
+<div>
+  <label for="img"> Img: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="img" type="text" formControlName="img">
+</div>
+
+
+
+</form>
+
+<button style="margin: 1cm;" type="submit" class="btn btn-primary" (click)="submit()"> Submit </button>
+<button style="margin: 1cm;" type="submit" class="btn btn-primary" (click)="delete()">Delete card by ID</button>
+</div>
